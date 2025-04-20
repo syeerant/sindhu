@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function goBack() {
+          window.location.href = '1home.html';
+        }
+      </script>
+
+</head>
+<body class="body-content">
+    <form>
+        <h1>login</h1>
+        <div class="container">
+            <label for="username" class="content">User Name</label>
+            <input type="text" id="username" name="username" required><br><br>
+            <label for="password" class="content">Password</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <input type="submit" value="login"  class="button-container">
+            <button onclick="goBack()" class="button-container">Back</button>
+        </div>
+    </form>
+</body>
+</html>

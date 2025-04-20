@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="home.css">
+
+    <script>
+        function goBack() {
+          window.location.href = '1home.html';
+        }
+      </script>
+
+</head>
+<body class="body-content">
+    <form>
+        <h1>Registration</h1>
+        <div class="container">
+            <label for="first_name" class="content">First Name</label>
+            <input type="text" id="firstname" name="firstname" required><br><br>
+            <label for="middle_name" class="content">Middle Name</label>
+            <input type="text" id="middlename" name="middlename"><br><br>
+            <label for="last_name" class="content">Last Name</label>
+            <input type="text" id="lastname" name="lastname" required><br><br>
+            <label for="email" class="content">Email Id</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="password" class="content">Password</label>
+            <input type="password" id="password" name="password" required><br><br>
+            <label for="phone_number" class="content">Phone Number</label>
+            <input type="number" id="phone" name="phone" required><br><br>
+            <input type="submit" value="login"  class="button-container">
+            <button onclick="goBack()" class="button-container">Back</button>
+        </div>
+    </form>
+</body>
+</html>
