@@ -4,8 +4,87 @@
     <meta charset="UTF-8">
     <title>Services Page</title>
     <link rel="stylesheet" href="home.css">
+
+    <style>
+        /* Navigation Bar Styling */
+.navbar {
+  background-color: #333;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.nav-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-item a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.nav-item a:hover {
+  background-color: #575757;
+}
+
+/* Dropdown Styling */
+.dropdown .dropbtn {
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content li {
+  list-style-type: none;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #575757;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+    </style>
+
 </head>
 <body>
-    
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li class="nav-item"><a href="home.html">Home</a></li>
+      <li class="nav-item"><a href="browse.html">Browse Articles</a></li>
+      <li class="nav-item dropdown">
+        <a href="#" class="dropbtn">Features</a>
+        <ul class="dropdown-content">
+          <li><a href="free.html">Free Features</a></li>
+          <li><a href="premium.html">Premium Features</a></li>
+          <li><a href="subscription.html">Subscription Plans</a></li>
+        </ul>
+      </li>
+      <li class="nav-item"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav>
 </body>
 </html>
